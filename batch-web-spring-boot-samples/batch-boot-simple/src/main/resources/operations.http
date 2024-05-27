@@ -1,6 +1,0 @@
-POST http://localhost:8081/batch/jobs/job
-Content-Type: application/json
-
-{}
-
-###

@@ -11,9 +11,9 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<artifactId>batch-web-spring-boot-samples</artifactId>
+	<artifactId>batch-web-spring-boot-scraping</artifactId>
 	<packaging>pom</packaging>
-	<name>Batch Web Spring Boot Samples</name>
+	<name>Batch Web Spring Boot Scraping</name>
 	<parent>
 		<groupId>de.codecentric</groupId>
 		<artifactId>batch-web-spring-boot-build</artifactId>
@@ -21,10 +21,15 @@
 		<relativePath>../batch-web-spring-boot-build</relativePath>
 	</parent>
 	<modules>
-		<module>batch-boot-simple</module>
-		<module>batch-boot-simple-jsr352</module>
-		<module>batch-boot-file-to-db</module>
+		<module>html-to-db-batch</module>
 	</modules>
+	<dependencies>
+		<dependency>
+			<groupId>org.opensearch.client</groupId>
+			<artifactId>opensearch-java</artifactId>
+			<version>2.10.3</version>
+		</dependency>
+	</dependencies>
 	<build>
 		<pluginManagement>
 			<plugins>

@@ -16,7 +16,7 @@
 		<module>batch-web-spring-boot-docs</module>
 		<module>batch-web-spring-boot-autoconfigure</module>
 		<module>batch-web-spring-boot-starter</module>
-		<module>batch-web-spring-boot-samples</module>
+		<module>batch-web-spring-boot-scraping</module>
 	</modules>
 	<organization>
 		<name>codecentric AG</name>
