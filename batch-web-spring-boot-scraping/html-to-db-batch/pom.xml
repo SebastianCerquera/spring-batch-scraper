@@ -26,7 +26,26 @@
         <version>${revision}</version>
         <relativePath>..</relativePath>
     </parent>
-		<dependencies>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-elasticsearch</artifactId>
+			<version>${spring-boot.version}</version>
+		</dependency>
+
+		<!--
+		<dependency>
+			<groupId>org.opensearch.client</groupId>
+			<artifactId>opensearch-java</artifactId>
+			<version>2.10.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents.client5</groupId>
+			<artifactId>httpclient5</artifactId>
+			<version>5.2.1</version>
+		</dependency>
+		-->
+
 		<dependency>
 			<groupId>de.codecentric</groupId>
 			<artifactId>batch-web-spring-boot-starter</artifactId>
